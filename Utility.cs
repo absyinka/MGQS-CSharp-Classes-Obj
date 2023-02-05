@@ -4,7 +4,7 @@ namespace Testing
 {
     public static class Utility
     {
-        public static void Printer(string resultString)
+        public static void Print(string resultString)
         {
             Console.WriteLine(resultString);
         }

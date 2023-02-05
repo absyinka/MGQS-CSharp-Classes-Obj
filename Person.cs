@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 
 namespace Testing
 {
@@ -49,7 +50,7 @@ namespace Testing
             return gender;
         }
 
-        public string PrintPersonDetails()
+        public string PersonDetails()
         {
             var result = $"\n========My Bio-Data =========\nSurname: {lastname}\nFirstname: {firstname}\nAge: {age}\nGender: {gender}\n==================";
 
@@ -80,6 +81,7 @@ namespace Testing
             catch (Exception ex)
             {
                 Console.WriteLine("An error occured: {0}", ex.Message);
+                return;
             }
         }
 
